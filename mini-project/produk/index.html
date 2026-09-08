@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ProductHub</h1>
+        <p>Daftar Produk Sederhana</p>
+    </header>
+
+    <main>
+
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Cari produk...">
+        </div>
+
+        <!-- Filter Kategori -->
+        <div class="filter">
+            <button onclick="filterProduk('Semua')">Semua</button>
+            <button onclick="filterProduk('Makanan')">Makanan</button>
+            <button onclick="filterProduk('Minuman')">Minuman</button>
+            <button onclick="filterProduk('Fashion')">Fashion</button>
+            <button onclick="filterProduk('Elektronik')">Elektronik</button>
+        </div>
+
+        <!-- Sorting -->
+        <div class="sort-box">
+            <label>Urutkan harga:</label>
+
+            <select id="sortHarga">
+                <option value="default">Default</option>
+                <option value="termurah">Termurah</option>
+                <option value="termahal">Termahal</option>
+            </select>
+        </div>
+
+        <!-- Tempat Produk -->
+        <div id="productContainer" class="product-container"></div>
+
+    </main>
+
+    <script src="index .js"></script>
+
+</body>
+
+</html>
