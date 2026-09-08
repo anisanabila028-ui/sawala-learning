@@ -1,8 +1,6 @@
 import { products } from "./data.js";
 
-// ================================
-// 1. Menampilkan semua produk
-// ================================
+
 
 function tampilkanProduk(products) {
     console.log("===== DAFTAR PRODUK =====");
@@ -17,9 +15,7 @@ function tampilkanProduk(products) {
 tampilkanProduk(products);
 
 
-// ================================
-// 2. Mencari produk berdasarkan kategori
-// ================================
+
 
 function cariBerdasarkanKategori(kategori) {
     return products.filter(
@@ -36,9 +32,7 @@ produkElektronik.forEach((product) => {
 });
 
 
-// ================================
-// 3. Mencari produk yang masih tersedia
-// ================================
+
 
 const produkTersedia = products.filter(
     (product) => product.stok > 0
@@ -51,9 +45,7 @@ produkTersedia.forEach((product) => {
 });
 
 
-// ================================
-// 4. Mengubah data produk dengan map
-// ================================
+
 
 const daftarNamaProduk = products.map(
     (product) => product.nama
@@ -63,9 +55,6 @@ console.log("\n===== NAMA PRODUK =====");
 console.log(daftarNamaProduk);
 
 
-// ================================
-// 5. Destructuring
-// ================================
 
 const produkPertama = products[0];
 
@@ -77,9 +66,7 @@ console.log("Harga:", `Rp${harga.toLocaleString("id-ID")}`);
 console.log("Kategori:", kategori);
 
 
-// ================================
-// 6. Spread operator
-// ================================
+
 
 const produkBaru = {
     id: 6,
