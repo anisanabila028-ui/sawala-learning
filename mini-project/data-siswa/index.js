@@ -1,109 +1,36 @@
-const siswa = [
+// DATA PRODUK
+
+const produk = [
     {
-        nama: "Annisa",
-        kelas: "XI RPL",
-        nilai: 85
+        nama: "Nasi Goreng",
+        harga: 15000,
+        kategori: "Makanan"
     },
     {
-        nama: "Budi",
-        kelas: "XI RPL",
-        nilai: 70
+        nama: "Es Teh",
+        harga: 5000,
+        kategori: "Minuman"
     },
     {
-        nama: "Citra",
-        kelas: "XI RPL",
-        nilai: 90
+        nama: "Hoodie",
+        harga: 85000,
+        kategori: "Fashion"
     },
     {
-        nama: "Doni",
-        kelas: "XI RPL",
-        nilai: 65
-    },
-    {
-        nama: "Eka",
-        kelas: "XI RPL",
-        nilai: 78
+        nama: "Keyboard",
+        harga: 200000,
+        kategori: "Elektronik"
     }
 ];
 
 
-// ================================
-// FUNCTION MENENTUKAN STATUS
-// ================================
+// MENAMPILKAN DATA PRODUK
 
-function tentukanStatus(nilai) {
-    if (nilai >= 75) {
-        return "Lulus";
-    } else {
-        return "Tidak Lulus";
-    }
-}
+console.log("===== DATA PRODUK =====");
 
-
-// ================================
-// MENAMPILKAN DATA SISWA
-// ================================
-
-function tampilkanSiswa(dataSiswa) {
-
-    const tempatData = document.getElementById("dataSiswa");
-
-    tempatData.innerHTML = "";
-
-    dataSiswa.forEach((siswa) => {
-
-        const status = tentukanStatus(siswa.nilai);
-
-        const card = document.createElement("div");
-
-        card.className = "siswa";
-
-        card.innerHTML = `
-      <span class="nama">${siswa.nama}</span>
-      | Kelas: ${siswa.kelas}
-      | Nilai: ${siswa.nilai}
-      | Status:
-      <span class="status ${status === "Lulus" ? "lulus" : "tidak-lulus"}">
-        ${status}
-      </span>
-    `;
-
-        tempatData.appendChild(card);
-    });
-}
-
-
-// ================================
-// FILTER BERDASARKAN OPTION
-// ================================
-
-const pilihan = document.getElementById("pilihan");
-
-pilihan.addEventListener("change", function () {
-
-    const nilaiPilihan = pilihan.value;
-
-    let hasil;
-
-    if (nilaiPilihan === "semua") {
-
-        hasil = siswa;
-
-    } else if (nilaiPilihan === "lulus") {
-
-        hasil = siswa.filter((siswa) => siswa.nilai >= 75);
-
-    } else if (nilaiPilihan === "tidakLulus") {
-
-        hasil = siswa.filter((siswa) => siswa.nilai < 75);
-    }
-
-    tampilkanSiswa(hasil);
+produk.forEach(function (data) {
+    console.log("Nama     :", data.nama);
+    console.log("Harga    : Rp" + data.harga);
+    console.log("Kategori :", data.kategori);
+    console.log("----------------------");
 });
-
-
-// ================================
-// TAMPILKAN SEMUA DATA SAAT AWAL
-// ================================
-
-tampilkanSiswa(siswa);

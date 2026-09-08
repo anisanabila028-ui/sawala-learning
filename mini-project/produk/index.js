@@ -192,3 +192,11 @@ sortHarga.addEventListener("change", function () {
 
 
 tampilkanProduk(products);
+console.log("=== PRODUCT HUB ===");
+
+products.forEach(function (product) {
+    console.log(product.nama);
+    console.log(product.kategori);
+    console.log("Rp " + product.harga);
+    console.log("----------------");
+});

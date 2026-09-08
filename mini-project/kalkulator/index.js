@@ -1,23 +1,35 @@
-function hitung() {
-    const angka1 = Number(document.getElementById("angka1").value);
-    const angka2 = Number(document.getElementById("angka2").value);
-    const operator = document.getElementById("operator").value;
+// KALKULATOR SEDERHANA
 
-    let hasil;
+const angka1 = 20;
+const angka2 = 5;
 
-    if (operator === "+") {
-        hasil = angka1 + angka2;
-    } else if (operator === "-") {
-        hasil = angka1 - angka2;
-    } else if (operator === "*") {
-        hasil = angka1 * angka2;
-    } else if (operator === "/") {
-        if (angka2 === 0) {
-            hasil = "Tidak bisa dibagi 0";
-        } else {
-            hasil = angka1 / angka2;
-        }
-    }
 
-    document.getElementById("hasil").textContent = hasil;
-}
+// PENJUMLAHAN
+
+const tambah = angka1 + angka2;
+
+console.log("===== KALKULATOR =====");
+console.log("Angka 1 :", angka1);
+console.log("Angka 2 :", angka2);
+console.log("Penjumlahan :", tambah);
+
+
+// PENGURANGAN
+
+const kurang = angka1 - angka2;
+
+console.log("Pengurangan :", kurang);
+
+
+// PERKALIAN
+
+const kali = angka1 * angka2;
+
+console.log("Perkalian :", kali);
+
+
+// PEMBAGIAN
+
+const bagi = angka1 / angka2;
+
+console.log("Pembagian :", bagi);
