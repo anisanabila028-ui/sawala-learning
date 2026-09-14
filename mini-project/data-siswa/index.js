@@ -1,4 +1,3 @@
-// DATA PRODUK
 
 const produk = [
     {
@@ -24,7 +23,7 @@ const produk = [
 ];
 
 
-// MENAMPILKAN DATA PRODUK
+// menampilkann produk
 
 console.log("===== DATA PRODUK =====");
 
