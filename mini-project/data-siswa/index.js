@@ -23,7 +23,7 @@ const produk = [
 ];
 
 
-// menampilkann produk
+// menampilkan produk
 
 console.log("===== DATA PRODUK =====");
 
