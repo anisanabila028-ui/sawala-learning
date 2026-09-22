@@ -23,6 +23,17 @@ const janji=new Promise((resolve, reject)=> {
     console.log(hasil);
  })
 
+ const ambilData= new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("berhasil diambil");
+    }, 2000);
+ });
+ async function tampilkan() {
+    const hasil= await ambilData;
+    console.log(hasil);
+
+ }
+ tampilkan();
  
  //promise async await
 

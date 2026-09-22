@@ -11,4 +11,4 @@ console.log("Apakah siswa:", isSiswa);
 console.log("Tipe nama:", typeof nama);
 console.log("Tipe umur:", typeof umur);
 console.log("Tipe kelas:", typeof kelas);
-console.log("Tipe isSiswa:", typeof isSiswa);
+console.log("Tipe isSiswa:", typeof isSiswa); 
