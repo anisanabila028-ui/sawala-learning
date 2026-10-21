@@ -179,26 +179,95 @@ Membangun aplikasi artikel sederhana dengan ketentuan:
 ##  Struktur Project
 
 ```text
-05-nextjs-starpi-final-project/
-├── backend-strapi/
-│   ├── config/
-│   ├── src/
-│   ├── package.json
-│   └── ...
-├── frontend-nextjs/
-│   ├── app/
-│   ├── components/
-│   │   ├── atoms/
-│   │   ├── molecules/
-│   │   └── organisms/
-│   ├── lib/
-│   ├── package.json
-│   └── ...
-└── README.md
-```
-
-*Catatan: Struktur folder dapat disesuaikan dengan hasil setup project yang sebenarnya.*
-
+└── sawala-learning-project/
+    ├── README.md
+    ├── .gitignore
+    │
+    ├── 01-javascript-fundamentals/            
+    │   ├── 01-variabel-tipe-data/
+    │   │   └── index.js
+    │   ├── 02-kondisi-function/
+    │   │   └── index.js
+    │   ├── 03-object-array/
+    │   │   └── index.js
+    │   ├── 04-looping-array-methods/
+    │   │   └── index.js
+    │   ├── 05-destructuring-spread/
+    │   │   └── index.js
+    │   ├── 06-es-modules/
+    │   │   ├── math.js
+    │   │   └── index.js
+    │   └── mini-project-produk-list/
+    │       ├── data.js
+    │       └── index.js
+    │
+    ├── 02-async-api-typescript/              
+    │   ├── 01-promise-async-await/
+    │   │   └── index.js
+    │   ├── 02-fetch-api/
+    │   │   └── index.js
+    │   ├── 03-error-handling/
+    │   │   └── index.js
+    │   ├── 04-typescript-basic/
+    │   │   ├── type-interface.ts
+    │   │   └── index.ts
+    │   └── mini-project-consume-api/
+    │       ├── api.ts
+    │       └── index.ts
+    │
+    ├── 03-nodejs-fundamentals/                
+    │   ├── 01-module-system/
+    │   │   └── index.js
+    │   ├── 02-npm-package-json/
+    │   │   └── package.json
+    │   └── mini-project-rest-api/
+    │       ├── src/
+    │       │   ├── routes/
+    │       │   │   └── articles.route.js
+    │       │   ├── controllers/
+    │       │   │   └── articles.controller.js
+    │       │   ├── middlewares/
+    │       │   │   └── logger.middleware.js
+    │       │   └── server.js
+    │       ├── .env
+    │       └── package.json
+    │
+    ├── 04-react-fundamentals/                
+    │   └── mini-project-react-dashboard/
+    │       ├── src/
+    │       │   ├── components/
+    │       │   │   ├── Card.tsx
+    │       │   │   └── Button.tsx
+    │       │   ├── App.tsx
+    │       │   └── main.tsx
+    │       ├── index.html
+    │       └── package.json
+    │
+    └── 05-nextjs-strapi-final-project/        
+        ├── frontend-nextjs/
+        │   ├── app/
+        │   │   ├── layout.tsx
+        │   │   ├── page.tsx
+        │   │   └── articles/
+        │   │       └── [slug]/
+        │   │           └── page.tsx
+        │   ├── components/
+        │   │   ├── atoms/
+        │   │   │   └── Button.tsx
+        │   │   ├── molecules/
+        │   │   │   └── ArticleCard.tsx
+        │   │   └── organisms/
+        │   │       └── ArticleList.tsx
+        │   ├── lib/
+        │   │   └── strapi.ts
+        │   ├── .env.local
+        │   └── package.json
+        └── backend-strapi/
+            ├── src/
+            │   └── api/
+            │       └── article/
+            ├── .env
+            └── package.json
 ## GitHub Workflow
 
 Alur kerja yang digunakan selama pembelajaran:
